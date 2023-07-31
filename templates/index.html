@@ -40,6 +40,16 @@
 
                     </div>
 
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter country" name="country" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control  mt-2" placeholder="Enter city" name="city" required>
+
+                    </div>
+
 
                     <div class="form-group mt-2">
                         <select id="gender" name="gender" class="form-control" required>
@@ -68,7 +78,10 @@
                     <th>Email</th>
                     <th>Age</th>
                     <th>Gender</th>
-                    <th>Action</th>
+
+                    <th>Country</th>
+                    <th>City</th>
+                      <th>Action</th>
                 </tr>
 
 
@@ -80,15 +93,17 @@
                     <th>{{ d.email }}</th>
                     <th>{{ d.age }}</th>
                     <th>{{ d.gender }}</th>
+                    <th>{{ d.country }}</th>
+                    <th>{{ d.city }}</th>
                     <th>
-                        <button>
+                        <button type="button" class="btn btn-outline-primary>
 
                             <a href="/delete/{{ d.id }}">Delete</a>
 
 
                         </button>
 
-                        <button>
+                        <button type="button" class="btn btn-outline-primary>
 
 
                             <a href="/update/{{ d.id }}">Update</a>

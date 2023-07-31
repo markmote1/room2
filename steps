@@ -1,0 +1,5 @@
+1. edit html add input
+2. edit model and add field
+3. makemigrations> migrate
+4. go views and add field to query
+5. go to html file
